@@ -1,0 +1,119 @@
+<!-- S-->
+<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.indigo-pink.min.css">
+<script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<style>
+    
+#title{
+    color: black;
+    font-size: 160%;
+}
+
+#border{
+    border-style: solid;
+    border-width: 2px;
+
+}
+    
+.demo-card-event.mdl-card {
+  width: 256px;
+  height: 256px;
+  background: #3E4EB8;
+}
+.demo-card-event > .mdl-card__actions {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+.demo-card-event > .mdl-card__title {
+  align-items: flex-start;
+}
+.demo-card-event > .mdl-card__title > h4 {
+  margin-top: 0;
+}
+.demo-card-event > .mdl-card__actions {
+  display: flex;
+  box-sizing:border-box;
+  align-items: center;
+}
+.demo-card-event > .mdl-card__title,
+.demo-card-event > .mdl-card__actions,
+.demo-card-event > .mdl-card__actions > .mdl-button {
+  color: #fff;
+}
+
+</style>
+
+
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header
+            mdl-layout--fixed-tabs">
+  <header class="mdl-layout__header mdl-layout__header--transparent">
+    <div class="mdl-layout__header-row" >
+        
+      <!-- Title -->
+      <span class="mdl-layout-title--colored" id="title">DO IT!</span>
+        
+      <div class="mdl-layout-spacer"></div>
+          
+      <!-- Settings Button -->
+      <button class="mdl-button mdl-js-button mdl-button--icon--colored">
+          <i class="material-icons">more_vert</i>
+      </button>
+    </div>
+      
+    <!-- Tabs -->
+    <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+      <a href="#fixed-tab-1" class="mdl-layout__tab is-active">New Runs</a>
+      <a href="#fixed-tab-2" class="mdl-layout__tab">Saved Runs</a>
+    </div>
+  </header>
+  <main class="mdl-layout__content">
+      
+    <!-- New Runs Tab -->
+    <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
+      <div class="page-content"><!-- Your content goes here --></div>
+    </section>
+      
+    <!-- Saved Runs Tab -->
+    <section class="mdl-layout__tab-panel" id="fixed-tab-2">
+      <div class="page-content">
+          
+
+        <div class="demo-card-event mdl-card mdl-shadow--2dp">
+          <div class="mdl-card__title mdl-card--expand">
+            <h4>
+              Featured event:<br>
+              May 24, 2016<br>
+              7-11pm
+            </h4>
+          </div>
+          <div class="mdl-card__actions mdl-card--border">
+            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+              Add to Calendar
+            </a>
+            <div class="mdl-layout-spacer"></div>
+            <i class="material-icons">event</i>
+          </div>
+        </div>
+          <div class="demo-card-event mdl-card mdl-shadow--2dp">
+          <div class="mdl-card__title mdl-card--expand">
+            <h4>
+              Featured event:<br>
+              May 24, 2016<br>
+              7-11pm
+            </h4>
+          </div>
+          <div class="mdl-card__actions mdl-card--border">
+            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+              Add to Calendar
+            </a>
+            <div class="mdl-layout-spacer"></div>
+            <i class="material-icons">event</i>
+          </div>
+        </div>
+
+
+        
+        </div>
+    </section>
+  </main>
+</div>
